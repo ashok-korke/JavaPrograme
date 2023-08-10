@@ -2,16 +2,24 @@ pipeline{
 agent any
 stages{
      stage('Build'){
-        echo "Project building successfully...."
+          steps{
+                echo "Project building successfully...."
+              }
     }
     stage('deploy'){
-        echo "Project Deployed successfully....."
+      steps{
+              echo "Project Deployed successfully....."
+           }
     }
     stage('Test'){
-        echo "Project Tested successfully......"
+     steps{
+           echo "Project Tested successfully......"
+         }
     }
     stage('Release'){
-        echo "Project released successfully....."
+      steps{
+             echo "Project released successfully....."
+           }
     }
     
 }
